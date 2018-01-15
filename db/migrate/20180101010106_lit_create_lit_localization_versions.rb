@@ -7,7 +7,7 @@ class LitCreateLitLocalizationVersions < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    add_index :lit_localization_versions, :localization_id
+    # add_index :lit_localization_versions, :localization_id
   end
 
   def down

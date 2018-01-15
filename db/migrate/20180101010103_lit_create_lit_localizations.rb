@@ -10,12 +10,12 @@ class LitCreateLitLocalizations < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    add_index :lit_localizations, :locale_id
-    add_index :lit_localizations, :localization_key_id
+    # add_index :lit_localizations, :locale_id
+    # add_index :lit_localizations, :localization_key_id
   end
 
   def down
-    remove_index :lit_localizations, :locale_id
-    remove_index :lit_localizations, :localization_key_id
+    # remove_index :lit_localizations, :locale_id
+    # remove_index :lit_localizations, :localization_key_id
   end
 end

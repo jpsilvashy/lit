@@ -13,19 +13,19 @@ class LitCreateLitIncommingLocalizations < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    add_index :lit_incomming_localizations, :locale_id
-    add_index :lit_incomming_localizations, :localization_key_id
-    add_index :lit_incomming_localizations, :localization_id
-    add_index :lit_incomming_localizations, :source_id
-    add_index :lit_incomming_localizations, :incomming_id
+    # add_index :lit_incomming_localizations, :locale_id
+    # add_index :lit_incomming_localizations, :localization_key_id
+    # add_index :lit_incomming_localizations, :localization_id
+    # add_index :lit_incomming_localizations, :source_id
+    # add_index :lit_incomming_localizations, :incomming_id
   end
 
   def down
-    remove_index :lit_incomming_localizations, :locale_id
-    remove_index :lit_incomming_localizations, :localization_key_id
-    remove_index :lit_incomming_localizations, :localization_id
-    remove_index :lit_incomming_localizations, :source_id
-    remove_index :lit_incomming_localizations, :incomming_id
+    # remove_index :lit_incomming_localizations, :locale_id
+    # remove_index :lit_incomming_localizations, :localization_key_id
+    # remove_index :lit_incomming_localizations, :localization_id
+    # remove_index :lit_incomming_localizations, :source_id
+    # remove_index :lit_incomming_localizations, :incomming_id
     drop_table :lit_incomming_localizations
   end
 end
